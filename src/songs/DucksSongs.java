@@ -32,15 +32,15 @@ public class DucksSongs {
                     ducks = "little duck";
                 }
                 System.out.println("But only " + newDucksNumber + " " + ducks + " came back.");
-                System.out.println();
+
             }
         }
+        System.out.println();
         ducks = "little ducks";
         System.out.println("Sad mother duck went out one day…");
         System.out.println("Over the hills and far away");
         System.out.println("Mother duck said “QUACK! QUACK! QUACK! QUACK!”");
         System.out.println("And all of the " + ducksNumber + " " + ducks + " came back.");
-
         System.out.println();
 
     }
