@@ -36,11 +36,13 @@ public class CreateAnimal {
         String furColour = myScanner.nextLine();
 
         System.out.println("How old is the cat?");
-        int age = myScanner.nextInt();
+        int age = Integer.parseInt(myScanner.nextLine());
 
         Cat myCat = new Cat(name, age, furColour);
         System.out.println(myCat.play(age));
         System.out.println(myCat.beHuman(name, age, furColour));
+
+        getAnimalType();
 
     }
 
@@ -55,12 +57,14 @@ public class CreateAnimal {
         System.out.println("What breed is the dog? Poodle? Labrador? Or Boarder Collie?");
         String breed = myScanner.nextLine();
         System.out.println("How old is the dog?");
-        int age = myScanner.nextInt();
+        int age = Integer.parseInt(myScanner.nextLine());
 
         Dog myDog = new Dog(name, size,age, breed);
 
         System.out.println(myDog.bark(size));
         System.out.println(myDog.play(breed));
         System.out.println(myDog.beHuman(name, age, breed));
+
+        getAnimalType();
     }
 }
